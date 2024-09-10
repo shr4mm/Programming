@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+int main()
+{
+    double a = 3.0;
+    double b = 7;
+    const double pi = 3.14;
+    double part1 = 0.5 * sin ((log(exp(b+a))));
+    double part2 = 1.308 * cos(log(exp(a-b)));
+    double sum = pow(fabs((part1 + part2)* (pi/8))  ,2.0/3.0);
+    std::cout << "Result: " << part1;
+    /*                         */
+    a = 2.0;
+    b = 13.13;
+    double result = pow(sqrt(1.0-exp(a)/b) * cos((b/a) * pi) + log(0.708 * b),3.0);
+    std::cout << " Result: " << result;
+    
+}
